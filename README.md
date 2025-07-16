@@ -1,12 +1,55 @@
 # Travel Planner
 
+<div align="center">
+
+![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Status](https://img.shields.io/badge/status-development-orange.svg)
+
+</div>
+
+<div align="center">
+
+![SvelteKit](https://img.shields.io/badge/SvelteKit-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Zod](https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white)
+
+</div>
+
 A modern, full-stack travel planning web application built with SvelteKit, TypeScript, Tailwind CSS, and Supabase. Plan your trips with AI-powered suggestions, manage packing lists, and collaborate with friends.
+
+## 🚀 Current Status
+
+### ✅ Completed Features
+- **Authentication System** - Full SvelteKit form actions with Zod validation
+- **Environment Configuration** - Proper Vite/SvelteKit env variable setup
+- **Database Schema** - Supabase trips table with RLS policies
+- **Basic UI Components** - Responsive design with Tailwind CSS
+- **Build System** - Production-ready build pipeline
+
+### 🚧 In Progress
+- **Trip Management** - Core CRUD operations for trips
+- **User Dashboard** - Trip overview and management interface
+- **Form Validation** - Client and server-side validation with Zod
+
+### 📋 Open Tasks
+- **Trip Details Page** - Individual trip view with editing capabilities
+- **Packing List Feature** - Create and manage packing lists per trip
+- **Friend Invitation System** - Share trips with friends
+- **AI Integration** - Ollama/Qwen3 integration for smart suggestions
+- **Real-time Collaboration** - Live updates for shared trips
+- **Mobile Responsiveness** - Optimize for mobile devices
+- **Testing Suite** - Unit and integration tests
+- **Deployment** - Production deployment setup
 
 ## 🚀 Features
 
 ### Authentication & User Management
 - **User Registration & Login** - Secure authentication with Supabase Auth
-- **Guest Login** - Quick access without email verification for demo purposes
+- **SvelteKit Form Actions** - Server-side form handling with validation
 - **Session Management** - Persistent login state with SSR support
 - **User Dashboard** - Personalized trip overview
 
@@ -74,7 +117,8 @@ travel-planner/
 │   │   ├── +layout.server.ts     # Server-side layout logic
 │   │   ├── +page.svelte          # Dashboard page
 │   │   ├── auth/
-│   │   │   └── +page.svelte      # Authentication page
+│   │   │   ├── +page.svelte      # Authentication page
+│   │   │   └── +page.server.ts   # Auth form actions
 │   │   ├── trips/
 │   │   │   └── +page.svelte      # Trip creation page
 │   │   ├── auth.ts               # Auth API endpoint
@@ -110,14 +154,10 @@ travel-planner/
    ```
 
 3. **Set up environment variables**
-   ```bash
-   cp .env.example .env
-   ```
-   
-   Edit `.env` with your Supabase credentials:
+   Create a `.env.local` file with your Supabase credentials:
    ```env
-   PUBLIC_SUPABASE_URL=https://your-project.supabase.co
-   PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+   VITE_SUPABASE_URL=https://your-project.supabase.co
+   VITE_SUPABASE_ANON_KEY=your-anon-key
    ```
 
 4. **Set up Supabase**
@@ -219,8 +259,8 @@ pnpm preview
 ## 🔧 Configuration
 
 ### Environment Variables
-- `PUBLIC_SUPABASE_URL` - Your Supabase project URL
-- `PUBLIC_SUPABASE_ANON_KEY` - Your Supabase anonymous key
+- `VITE_SUPABASE_URL` - Your Supabase project URL
+- `VITE_SUPABASE_ANON_KEY` - Your Supabase anonymous key
 - `OLLAMA_URL` - Ollama server URL (for AI features)
 - `GOOGLE_MAPS_API_KEY` - Google Maps API key (for route visualization)
 
@@ -246,10 +286,10 @@ The project uses Tailwind CSS with custom configuration:
 ## 📝 Development Roadmap
 
 ### Phase 1: Core Features ✅
-- [x] User authentication
-- [x] Trip creation and management
-- [x] Dashboard with trip overview
-- [x] AI suggestion framework
+- [x] User authentication with SvelteKit form actions
+- [x] Environment configuration and build setup
+- [x] Database schema and RLS policies
+- [x] Basic UI components and responsive design
 
 ### Phase 2: Enhanced Features 🚧
 - [ ] Trip details page with Google Maps

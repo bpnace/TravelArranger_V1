@@ -2,8 +2,8 @@ import { createServerClient } from '@supabase/ssr';
 import type { Handle } from '@sveltejs/kit';
 
 export const supabaseServer = createServerClient(
-  import.meta.env.PUBLIC_SUPABASE_URL as string,
-  import.meta.env.PUBLIC_SUPABASE_ANON_KEY as string,
+  import.meta.env.VITE_SUPABASE_URL as string,
+  import.meta.env.VITE_SUPABASE_ANON_KEY as string,
   {
     cookies: {
       get: (key) => undefined,
@@ -15,8 +15,8 @@ export const supabaseServer = createServerClient(
 
 export const handle: Handle = async ({ event, resolve }) => {
   event.locals.supabase = createServerClient(
-    import.meta.env.PUBLIC_SUPABASE_URL as string,
-    import.meta.env.PUBLIC_SUPABASE_ANON_KEY as string,
+    import.meta.env.VITE_SUPABASE_URL as string,
+    import.meta.env.VITE_SUPABASE_ANON_KEY as string,
     {
       cookies: {
         get: (key) => event.cookies.get(key),
