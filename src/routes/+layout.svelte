@@ -21,6 +21,7 @@ async function handleLogout() {
         </div>
         <div class="flex items-center space-x-4">
           <span class="text-sm text-gray-700">{data.user?.email}</span>
+          <a href="/history" class="text-blue-600 hover:text-blue-800 text-sm">History</a>
           <button 
             on:click={handleLogout}
             class="bg-red-600 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-red-700 transition"
