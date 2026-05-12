@@ -15,10 +15,37 @@
 
 </div>
 
+![TravelArranger trip creation screen](docs/assets/travelarranger-dashboard.png)
+
 TravelArranger V1 is an active full-stack travel planning build. The current
 focus is turning a SvelteKit, TypeScript, Tailwind CSS, and Supabase foundation
 into a practical trip-planning product with authenticated dashboards, trip
 creation, packing workflows, and AI-assisted suggestions.
+
+## Case study
+
+### Problem
+Travel planning tools often split trip data, notes, packing, and collaboration
+across separate apps. This build explores a focused product surface for creating
+and managing trips with a path toward shared planning and AI-assisted
+suggestions.
+
+### Solution
+I started with a SvelteKit full-stack app that covers authenticated user flows,
+trip creation, Supabase-backed data access, and route-level product slices for
+details, invitations, packing, and AI suggestions.
+
+### Engineering decisions
+- Use SvelteKit server load/actions for auth-aware product routes
+- Keep Supabase clients split between browser and server usage
+- Model the current public state as an in-progress product, not a finished SaaS
+- Keep the README roadmap tied to concrete feature slices
+- Fix the app-shell CSS import so Tailwind renders in screenshots and builds
+
+### Outcome
+The repo is intentionally public as a currently-building full-stack case. It
+shows product direction, implementation progress, and the next slices a reviewer
+or contributor can understand quickly.
 
 ## What this shows
 
@@ -151,8 +178,8 @@ travel-planner/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/bpnace/codex_test1.git
-   cd travel-planner
+   git clone https://github.com/bpnace/TravelArranger_V1.git
+   cd TravelArranger_V1
    ```
 
 2. **Install dependencies**

@@ -1,4 +1,5 @@
 <script lang="ts">
+import '$lib/tailwind.css';
 import { supabase } from '$lib/supabaseClient';
 import { goto } from '$app/navigation';
 
@@ -9,8 +10,6 @@ async function handleLogout() {
   goto('/auth');
 }
 </script>
-
-<style global src="../lib/tailwind.css"></style>
 
 {#if data.user}
   <nav class="bg-white shadow-sm border-b">
@@ -36,4 +35,4 @@ async function handleLogout() {
 
 <main>
   <slot />
-</main> 
+</main>
