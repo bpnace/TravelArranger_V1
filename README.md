@@ -5,6 +5,8 @@
 [![CI](https://github.com/bpnace/TravelArranger_V1/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/bpnace/TravelArranger_V1/actions/workflows/ci.yml)
 ![Version](https://img.shields.io/badge/version-0.0.1-2563EB?style=flat-square)
 ![Status](https://img.shields.io/badge/status-currently_building-F97316?style=flat-square)
+![Security](https://img.shields.io/badge/security-Dependabot_%2B_CodeQL-2ea043?style=flat-square)
+![License](https://img.shields.io/badge/license-proprietary_portfolio_review-6B7280?style=flat-square)
 ![SvelteKit](https://img.shields.io/badge/SvelteKit-2.0-FF3E00?style=flat-square&logo=svelte&logoColor=white)
 ![Svelte](https://img.shields.io/badge/Svelte-4.2-FF3E00?style=flat-square&logo=svelte&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript&logoColor=white)
