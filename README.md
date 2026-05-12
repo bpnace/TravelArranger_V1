@@ -2,21 +2,16 @@
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Status](https://img.shields.io/badge/status-currently_building-orange.svg)
-![SvelteKit](https://img.shields.io/badge/SvelteKit-full--stack-FF3E00?logo=svelte&logoColor=white)
-
-</div>
-
-<div align="center">
-
-![SvelteKit](https://img.shields.io/badge/SvelteKit-FF3E00?style=for-the-badge&logo=svelte&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Zod](https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white)
+[![CI](https://github.com/bpnace/TravelArranger_V1/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/bpnace/TravelArranger_V1/actions/workflows/ci.yml)
+![Version](https://img.shields.io/badge/version-0.0.1-2563EB?style=flat-square)
+![Status](https://img.shields.io/badge/status-currently_building-F97316?style=flat-square)
+![SvelteKit](https://img.shields.io/badge/SvelteKit-2.0-FF3E00?style=flat-square&logo=svelte&logoColor=white)
+![Svelte](https://img.shields.io/badge/Svelte-4.2-FF3E00?style=flat-square&logo=svelte&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-2.38-3ECF8E?style=flat-square&logo=supabase&logoColor=0B1220)
+![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?style=flat-square&logo=vite&logoColor=white)
+![pnpm](https://img.shields.io/badge/pnpm-lockfile_v9-F69220?style=flat-square&logo=pnpm&logoColor=white)
 
 </div>
 
