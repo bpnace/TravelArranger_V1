@@ -1,10 +1,11 @@
-# Travel Planner
+# TravelArranger V1
 
 <div align="center">
 
 ![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Status](https://img.shields.io/badge/status-development-orange.svg)
+![Status](https://img.shields.io/badge/status-currently_building-orange.svg)
+![SvelteKit](https://img.shields.io/badge/SvelteKit-full--stack-FF3E00?logo=svelte&logoColor=white)
 
 </div>
 
@@ -19,31 +20,42 @@
 
 </div>
 
-A modern, full-stack travel planning web application built with SvelteKit, TypeScript, Tailwind CSS, and Supabase. Plan your trips with AI-powered suggestions, manage packing lists, and collaborate with friends.
+TravelArranger V1 is an active full-stack travel planning build. The current
+focus is turning a SvelteKit, TypeScript, Tailwind CSS, and Supabase foundation
+into a practical trip-planning product with authenticated dashboards, trip
+creation, packing workflows, and AI-assisted suggestions.
 
-## 🚀 Current Status
+## What this shows
 
-### ✅ Completed Features
-- **Authentication System** - Full SvelteKit form actions with Zod validation
-- **Environment Configuration** - Proper Vite/SvelteKit env variable setup
-- **Database Schema** - Supabase trips table with RLS policies
-- **Basic UI Components** - Responsive design with Tailwind CSS
-- **Build System** - Production-ready build pipeline
+- Full-stack SvelteKit app structure with server-side form actions
+- Supabase Auth, PostgreSQL schema work, and Row Level Security planning
+- Type-safe validation with Zod and a production-ready Vite/SvelteKit build path
+- A product roadmap that moves from auth and trip CRUD toward AI-assisted planning
 
-### 🚧 In Progress
-- **Trip Management** - Core CRUD operations for trips
-- **User Dashboard** - Trip overview and management interface
-- **Form Validation** - Client and server-side validation with Zod
+## Current status
 
-### 📋 Open Tasks
-- **Trip Details Page** - Individual trip view with editing capabilities
-- **Packing List Feature** - Create and manage packing lists per trip
-- **Friend Invitation System** - Share trips with friends
-- **AI Integration** - Ollama/Qwen3 integration for smart suggestions
-- **Real-time Collaboration** - Live updates for shared trips
-- **Mobile Responsiveness** - Optimize for mobile devices
-- **Testing Suite** - Unit and integration tests
-- **Deployment** - Production deployment setup
+This repository is intentionally public while the product is being built. The
+completed foundation is visible, and the remaining work is tracked as the next
+product slices rather than presented as finished production software.
+
+### Completed
+- **Authentication foundation** - SvelteKit form actions with Zod validation
+- **Environment setup** - Vite/SvelteKit env variable handling
+- **Database model** - Supabase trips table with RLS policy planning
+- **UI foundation** - Responsive Tailwind CSS app shell
+- **Build system** - Production build pipeline
+
+### In progress
+- **Trip management** - Core CRUD operations for trips
+- **User dashboard** - Trip overview and management interface
+- **Form validation** - Client and server-side validation polish
+
+### Next product slices
+- **Trip details page** - Individual trip view with editing capabilities
+- **Packing list feature** - Packing lists per trip
+- **Friend invitations** - Shared planning workflows
+- **AI suggestions** - Ollama/Qwen3-backed trip recommendations
+- **Testing and deployment** - Unit, integration, e2e, and production setup
 
 ## 🚀 Features
 
